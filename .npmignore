@@ -1,0 +1,7 @@
+test/
+tmp/
+dist/
+node_modules/
+
+.travis.yml
+.npmignore

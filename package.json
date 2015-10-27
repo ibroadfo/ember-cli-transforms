@@ -1,0 +1,32 @@
+{
+  "name": "ember-cli-transforms",
+  "version": "1.0.0",
+  "description": "Gives you the ability to apply arbitrary transformations to specific files at any stage of the ember-cli build workflow.",
+  "license": "MIT",
+  "author": "David Bazile",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "devDependencies": {
+    "broccoli-test-helpers": "0.0.8",
+    "mocha": "~2.3.0"
+  },
+  "dependencies": {
+    "broccoli-filter": "^1.2.2"
+  },
+  "repository": "https://github.com/dbazile/ember-cli-transforms",
+  "bugs": {
+    "url": "https://github.com/dbazile/ember-cli-transforms/issues"
+  },
+  "keywords": [
+    "ember-addon"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "ember-addon": {}
+}
