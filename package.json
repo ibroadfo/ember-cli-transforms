@@ -16,7 +16,8 @@
     "mocha": "~2.3.0"
   },
   "dependencies": {
-    "broccoli-filter": "^1.2.2"
+    "broccoli-filter": "^1.2.2",
+    "minimatch": "^3.0.0"
   },
   "repository": "https://github.com/dbazile/ember-cli-transforms",
   "bugs": {
