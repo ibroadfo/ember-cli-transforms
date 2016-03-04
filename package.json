@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-transforms",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An ember-cli addon that lets you apply arbitrary transformations to specific files at the end of a build.",
   "license": "MIT",
   "author": "David Bazile",
