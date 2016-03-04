@@ -26,7 +26,7 @@ function generateOptions(options) {
   if (options.targets && !Array.isArray(options.targets)) {
     throw new Error('`transforms.targets` must be an array of transforms');
   }
-  if (options.targets.filter(t => !t.pattern).length) {
+  if (options.targets && options.targets.find(t => !t.pattern)) {
     throw new Error('`transforms.targets`: all transforms require a `pattern` string');
   }
   return Object.assign({
