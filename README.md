@@ -34,6 +34,8 @@ const app = new EmberApp(defaults, {
 });
 ```
 
+Transforms will only be applied in the production environment.
+
 
 ## Options
 
