@@ -34,7 +34,7 @@ const app = new EmberApp(defaults, {
 });
 ```
 
-Transforms will only be applied in the production environment.
+Transforms will only be applied in the production environment by default.
 
 
 ## Options
@@ -77,3 +77,7 @@ Technically there's nothing stopping you from defining a _target_ without a `ren
 ### transforms.extensions: `string[]`
 
 An array of file extensions that will be processed.  Defaults to `['css', 'html', 'js']`.
+
+### transforms.transformInDevelopment: `boolean`
+
+Flag to enable transformation in the development environment.

@@ -8,11 +8,13 @@ module.exports = {
   included(app) {
     this._super.included.apply(this, arguments);
     this.isProductionBuild = app.env === 'production';
+    this.isDevelopmentBuild = app.env === 'development';
     this.options = generateOptions(app.options.transforms || {});
+    this.shouldPerformFilter = this.isProductionBuild || (this.options.transformInDevelopment && this.isDevelopmentBuild)
   },
 
   postprocessTree(type, tree) {
-    if (type === 'all' && this.isProductionBuild) {
+    if (type === 'all' && this.shouldPerformFilter) {
       return new TransformFilter(tree, this.options);
     }
     return tree;
